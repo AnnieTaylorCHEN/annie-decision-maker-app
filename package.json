@@ -5,7 +5,7 @@
   "homepage": "https://annietaylorchen.github.io/annie-decision-maker-app/",
   "scripts": {
     "dev": "live-server public",
-    "build": "webpack -p --env production",
+    "build": "webpack --watch",
     "devServer": "webpack-dev-server",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d public"

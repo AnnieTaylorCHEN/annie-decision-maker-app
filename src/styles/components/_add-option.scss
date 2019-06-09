@@ -7,6 +7,7 @@
 
 .add-option{
     display: flex;
+    flex-direction: column;
     padding: 1rem;
 }
 
@@ -16,5 +17,16 @@
     border: none;
     border-bottom: 1px solid lighten($bg-blue, 10%);
     flex-grow: 1;
-    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 30rem) {
+    .add-option{
+        flex-direction: row;
+    }
+
+    .add-option__input {
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
 }
